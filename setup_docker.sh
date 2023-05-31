@@ -6,7 +6,7 @@ elif [[ "$SHELL" == *"zsh"* ]]; then
     RC_FILE="$HOME/.zshrc"
 fi
 
-if ! grep "dd=" $RC_FILE &> /dev/null; then
+if ! grep "docd=" $RC_FILE &> /dev/null; then
 	echo "debian docker alias not present"
 	echo "Adding alias dd in file: $RC_FILE"
 	echo -e "\nalias docd=\"open -g -a Docker && sleep 10; docker start debian && docker attach debian\"\n" >> $RC_FILE
