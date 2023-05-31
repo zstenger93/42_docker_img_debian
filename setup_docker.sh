@@ -9,9 +9,15 @@ fi
 if ! grep "dd=" $RC_FILE &> /dev/null; then
 	echo "debian docker alias not present"
 	echo "Adding alias dd in file: $RC_FILE"
-	echo -e "\nalias dd=\"docker start debian && docker attach debian\"\n" >> $RC_FILE
+	echo -e "\nalias docd=\"open -g -a Docker && sleep 10; docker start debian && docker attach debian\"\n" >> $RC_FILE
 	echo "From now on you can run with typing only dd into the terminal"
 fi
+
+cd ~
+
+git clone https://github.com/zstenger93/42_docker_img_debian.git
+
+cd docker/
 
 cd debian/
 
