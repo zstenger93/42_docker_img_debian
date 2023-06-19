@@ -15,7 +15,8 @@ fi
 
 cd ~
 
-git clone https://github.com/zstenger93/42_docker_img_debian.git docker
+if [ -d "$docker" ]; then
+	git clone https://github.com/zstenger93/42_docker_img_debian.git docker
 
 cd docker/debian/
 
