@@ -16,9 +16,9 @@ fi
 cd ~
 
 if [ -d "$docker" ]; then
-	git clone https://github.com/zstenger93/42_docker_img_debian.git docker
-else
 	cd docker/debian/
+else
+	git clone https://github.com/zstenger93/42_docker_img_debian.git docker
 fi
 
 ./init_docker.sh
