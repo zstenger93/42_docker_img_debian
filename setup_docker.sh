@@ -21,7 +21,7 @@ else
 	git clone https://github.com/zstenger93/42_docker_img_debian.git docker
 fi
 
-pwd
+echo $PWD
 
 ./docker/debian/init_docker.sh
 
