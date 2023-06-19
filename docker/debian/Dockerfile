@@ -1,4 +1,4 @@
-FROM 		debian:latest
+FROM 		debian:bullseye
 ENTRYPOINT	[ "/bin/zsh" ]
 WORKDIR		/home/user/projects
 ENV			USER=$USER
