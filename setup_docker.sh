@@ -21,6 +21,8 @@ else
 	git clone https://github.com/zstenger93/42_docker_img_debian.git docker
 fi
 
+cd docker/debian/
+
 ./init_docker.sh
 
 ./run.sh
