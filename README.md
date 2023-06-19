@@ -1,5 +1,7 @@
 <h1 align=center>📖 42_docker_img_debian</h1>
 
+In case it asks for password, just `ctrl+c` out and let it run
+
 # What it does
 The script will setup a debian image for you which can be run afterwards with:
 ```
