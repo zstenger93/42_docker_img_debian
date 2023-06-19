@@ -21,6 +21,7 @@ else
 	git clone https://github.com/zstenger93/42_docker_img_debian.git docker
 fi
 
+# don't fuckin question why is this here. ever . period.
 echo $PWD
 
 ./docker/debian/init_docker.sh
