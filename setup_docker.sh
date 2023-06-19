@@ -17,11 +17,7 @@ cd ~
 
 git clone https://github.com/zstenger93/42_docker_img_debian.git
 
-cd 42_docker_img_debian
-
-cd docker/
-
-cd debian/
+cd 42_docker_img_debian/docker/debian/
 
 ./init_docker.sh
 
