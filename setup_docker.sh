@@ -16,13 +16,11 @@ fi
 cd ~
 
 if [ -d "$docker" ]; then
-	cd docker/debian/
+	echo "asd"
 else
 	git clone https://github.com/zstenger93/42_docker_img_debian.git docker
 fi
 
-cd docker/debian/
+./docker/debian/init_docker.sh
 
-./init_docker.sh
-
-./run.sh
+./docker/debian/run.sh
