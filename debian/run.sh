@@ -6,7 +6,7 @@
 echo "Waiting for Docker engine to be ready...";	\
 until docker info &> /dev/null
 do
-    sleep 1
+    sleep 10
 done
 docker rm debian &> /dev/null
 docker build -t debian ~/docker/debian
