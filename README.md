@@ -11,7 +11,7 @@ In case it asks for password, just `ctrl+c` out and let it run
 ## With curl
 
 ```
-https://raw.githubusercontent.com/zstenger93/42_docker_img_debian/master/setup_docker.sh)
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/zstenger93/42_docker_img_debian/master/setup_docker.sh)"
 ```
 
 ## Manually
